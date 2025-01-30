@@ -120,7 +120,7 @@ public class sevDeskApi {
 
         // aus der Liste aller Kunden, den "Top" finden
         for (CustomerRevenue cR : customerRevenues){
-            System.out.println(cR.getCustomerId() + " : " + cR.getTotalRevenue());
+            //System.out.println(cR.getCustomerId() + " : " + cR.getTotalRevenue());
             if (cR.getTotalRevenue() > highestRevenue){
                 highestRevenue = cR.getTotalRevenue();
                 topCustomerId = cR.getCustomerId();
@@ -143,7 +143,7 @@ public class sevDeskApi {
 
     private static Contact fetchContactDetails(String contactId) throws Exception{//IOException, InterruptedException {
         final String CONTACT_API_URL = "https://my.sevdesk.de/api/v1/Contact/" + contactId;  // API URL für Kontakt
-        final String API_KEY = "b08cf13e9c52876b7ad59730628e55c3";  // Dein API-Schlüssel
+        final String API_KEY = "b08cf13e9c52876b7ad59730628e55c3";
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
