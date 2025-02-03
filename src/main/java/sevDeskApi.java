@@ -137,7 +137,7 @@ public class sevDeskApi {
                 System.out.println("Keine Kontakte gefunden.");
             }
         } else {
-            System.out.println("Keine Rechnungen im angegebenen Monat gefunden.");
+            System.out.println("Keine Rechnungen im angegebenen Monat gefunden");
         }
     }
 
